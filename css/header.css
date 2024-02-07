@@ -1,0 +1,130 @@
+
+.cabecalho_menu{
+
+    width: 24px;
+     height: 24px;
+    background-image: url(../img/Menu.svg); /* dois pontos para sair da pasta do css*/
+     display: inline-block;
+     background-repeat: no-repeat;
+     background-position: center;
+     
+}
+.cabecalho{
+    background-color: var(--cor-cabecalho);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+   
+}
+.conteiner{
+    display: flex;
+    align-items: center;
+    list-style: none;
+   
+}
+.imagem{
+    padding: 1rem;
+}
+.lista{
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    list-style: none;
+   
+}
+.container_botao:checked ~ .lista{ /* o tio funciona quase como uma condicional e checked é uma pseudoclasse*/
+    display: block;
+}
+.lista_titulo, .item_menu{
+    padding: 1rem;
+    background-color: rgb(254, 246, 246);
+    width: 55vw;
+}
+.lista_titulo{
+    color: var(--rosa-titulo);
+    font-weight: 800;
+}
+.lista_link{
+    color: var(--preto);
+    text-decoration: none;
+    text-transform: uppercase; /* tranformando o texto em maisculo*/
+}
+.container_botao{
+    display: none;
+}
+.opcoes{
+    display: none;
+    list-style: none;
+}
+.container_media img{
+    display: none;
+}
+.container_texto{
+    display: none;
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .opcoes{
+        display: flex;
+        text-transform: uppercase;
+    }
+    .opcoes_item{
+        padding: 1em;
+       
+    }
+    .opcoes_links{
+        text-decoration: none;
+        color: black;
+    }
+    .imagem_invisivel{
+        display: none;
+    }
+    cabecalho{
+        display: none;
+    }
+    .container_botao{
+        display: none;
+    }
+    .menu_responsivo:checked ~ .lista{
+        display: block;
+        padding: 2.5em;
+        width: 2px;
+    }
+    .cabecalho_menu{
+        display: none;
+    }
+    .menu_responsivo{
+        display: none;
+    }
+    .container_media img{
+        display: block;
+        width: 70px;
+        display: flex;
+        margin: 0em 3em;
+    }
+}
+@media screen and (min-width: 1728px){
+    .imagem_sacola{
+        display: block;
+    }
+    .container_texto{
+        display: block;
+    }
+    .container_link{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        font-family: var(--Fonte-Principal);
+        padding: 0 2em;
+        
+    }
+    .opcoes{
+        margin-right: auto;
+    }
+    
+    
+}

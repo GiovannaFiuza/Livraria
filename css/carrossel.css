@@ -1,0 +1,116 @@
+.carrossel_titulo{
+    color:  #5f1138;  
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--Fonte-Principal);
+    padding: 1em;
+    background-color:var(--cor-cabecalho);
+}
+.swiper-slide img{
+    width: 100%;
+}
+.swiper-button-prev, .swiper-button-next{
+    display: none;
+}
+.swiper-pagination{
+    position: initial;
+    padding: 1em;
+}
+.card_descricao{
+    display: flex;
+    justify-content: space-between;
+  
+
+
+}
+.card_descricao img{
+    width: 60%;
+    height: auto;
+    margin: 5em 0;
+    padding: 0 1em 0 1em;
+}
+.card_botao{
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.card{
+    background-color: rgb(254, 246, 246);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    margin: 0;
+    padding: 3em;
+    
+    
+}
+
+.descricao_titulo{
+    color: var(--rosa-titulo);
+    font-family: var(--Fonte-Principal);
+    font-weight: 800;
+    margin-bottom: 0.5em;
+}
+.descricao_titulo_cafe{
+    font-family: var(--fonte-titulo);
+    margin: 0.5em;
+    
+}
+
+.botao_ancora{
+    padding: 2em 2em;
+    text-decoration: none;
+    background-color: var(--cor-cabecalho);
+    border-radius: 10%;
+    margin-top: 1em;
+    color: black;
+    font-family: var(--Fonte-Principal);
+    
+}
+.botao{
+    padding-top: 2em;
+    list-style: none;
+}
+.swiper-wrapper{
+    padding-bottom: 2em;
+}
+
+@media screen and (min-width: 1024px){
+    .swiper-pagination{
+        margin: 2em 0 2em 0;
+    }
+    .swiper{
+        width: 70%;
+    }
+    .swiper-button-prev, .swiper-button-next{
+        display: block;
+        top: 35%;
+    }
+    .card{
+        width: 70%;
+        margin: 0 auto 2em auto;}
+}
+@media screen and (min-width: 1728px){
+    .carrossel_container{
+        display: flex;
+        margin: 0 20vw 3em 20vw;
+        align-items: center;
+    }
+    .card{
+        width: 30%;
+       margin-top: 2em;
+    }
+    .swiper-pagination{
+        margin: 1em  0;
+    }
+    .swiper{
+        width: 50%;
+    }
+    .descricao_titulo{
+        font-size: 25px;
+    }
+    .card_descricao img{
+        margin-left: 2em;
+    }
+    
+}
